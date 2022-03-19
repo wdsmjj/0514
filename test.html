@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Toast Message</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      #toast {
+        visibility: hidden;
+        position: fixed;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 100px;
+        border-radius: 25px;
+        background-color: #666666;
+        color: #ffffff;
+        padding: 15px 25px;
+      }
+
+      #toast.show {
+        visibility: visible;
+        animation: fade-in 700ms, fade-out 700ms 2000ms;
+      }
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade-out {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="toastButton">toast button</button>
+    <div id="toast">Toast Message</div>
+
+    <script>
+      const toast = document.getElementById('toast');
+      let isToastShown = false;
+      document
+        .getElementById('toastButton')
+        .addEventListener('click', function () {
+          if (isToastShown) return;
+          isToastShown = true;
+          toast.classList.add('show');
+          setTimeout(function () {
+            toast.classList.remove('show');
+            isToastShown = false;
+          }, 2700);
+        });
+    </script>
+  </body>
+</html>
