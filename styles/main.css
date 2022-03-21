@@ -10807,16 +10807,15 @@ a {
   display: inline-block;
 }
 .my-gallery img {
-  width: 50%;
+  width: 70%;
   height: auto;
 }
 
 .my-gallery figure {
   display: block;
   float: left;
-  margin: 0 5px 5px 0;
+  margin: 0 -25px 5px -25px;
   width: 150px;
-  text-align: center;
 }
 .my-gallery figcaption {
   display: none;
