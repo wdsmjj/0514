@@ -10804,17 +10804,23 @@ a {
 .my-gallery {
   width: 100%;
   float: left;
+  display: inline-block;
 }
 .my-gallery img {
-  width: 70%;
+  width: 50%;
   height: auto;
 }
+
 .my-gallery figure {
   display: block;
   float: left;
   margin: 0 5px 5px 0;
   width: 150px;
+  text-align: center;
 }
 .my-gallery figcaption {
   display: none;
+}
+.my-gallery-container {
+  text-align: center;
 }
