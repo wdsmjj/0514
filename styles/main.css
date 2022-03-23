@@ -539,6 +539,9 @@ mark,
   margin: auto;
 }
 .map_infowindow {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1em;
+  letter-spacing: -1px;
   padding: 5px;
 }
 .map-image {
