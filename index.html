@@ -64,6 +64,7 @@
       href="https://fonts.googleapis.com/css?family=Gamja+Flower|Gugi|Noto+Serif+KR|Stylish|Sunflower:300"
       rel="stylesheet"
     />
+
     <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
 
     <!-- Icon -->
@@ -87,9 +88,18 @@
       src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=77l2r7phk7"
     ></script>
 
+    <!-- Bootstrap -->
+    <!--
     <link
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
+    />-->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
   </head>
 
@@ -126,7 +136,7 @@
             </div>
           </div>
         </div>
-        <div class="ww-nav-bar sticky-top bg-light">
+        <!-- <div class="ww-nav-bar sticky-top bg-light">
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
               <button
@@ -163,7 +173,42 @@
               </div>
             </div>
           </nav>
-        </div>
+        </div> -->
+
+        <nav
+          class="ww-nav-bar sticky-top navbar-expand-lg navbar-light bg-light"
+        >
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#couple">Couple</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#events">Place</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div id="top"></div>
 
         <div class="ww-section" id="couple">
           <div class="container">
@@ -174,7 +219,9 @@
               인사말
             </h2>
             <div class="col text-center mb-5 pb-5">
-              <h6 style="font-family: 'Noto Serif KR', serif">
+              <h5
+                style="font-family: 'Noto Serif KR', serif; line-height: 1.5em"
+              >
                 <br />
                 우리는 저마다<br /><br />
                 자기 힘으로 닫지 못하는<br /><br />
@@ -182,7 +229,7 @@
                 마침내 그 문을 닫아줄<br /><br />
                 사람이 오고 있는 것이다.<br /><br />
                 -이병률, '사람이 온다'-<br /><br />
-              </h6>
+              </h5>
             </div>
 
             <div class="row text-center">
@@ -263,7 +310,7 @@
           </div>
         </div>
         <div class="ww-section bg-skintone" id="events">
-          <div class="container ww-wedding-event pt-5">
+          <div class="container ww-wedding-event">
             <h2
               class="h1 text-center pb-5 ww-title"
               style="font-family: 'Noto Serif KR', serif"
@@ -271,7 +318,7 @@
               초대합니다
             </h2>
             <div class="row">
-              <div class="h5 col-md-6 col-sm-12 text-center pb-5">
+              <div class="h5 col-md-6 col-sm-12 text-center pb-2">
                 <div class="my-3-border">
                   <ul>
                     <li class="pt-4">
@@ -416,7 +463,7 @@
         </div>
 
         <div class="ww-section" id="gallery">
-          <div class="ww-photo-gallery pt-3 pb-5">
+          <div class="ww-photo-gallery pb-5">
             <div class="container">
               <h2
                 class="h1 text-center pb-4 ww-title"
@@ -787,11 +834,29 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!--
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="js/parallax.min.js"></script>
 
     <script src="scripts/main.js"></script>
+
+    <script>
+      const navLinks = document.querySelectorAll('.nav-item');
+      const menuToggle = document.getElementById('navbarSupportedContent');
+      const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
+      navLinks.forEach((l) => {
+        l.addEventListener('click', () => {
+          bsCollapse.toggle();
+        });
+      });
+    </script>
 
     <div class="bottom_right">
       <i class="fa fa-arrow-up fa-2x" id="go-to-top"></i>

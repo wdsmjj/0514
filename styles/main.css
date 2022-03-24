@@ -391,20 +391,21 @@ h6,
 .h2,
 .h3,
 .h4,
-.h6 {
+/* .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.2em;
   color: inherit;
 }
 h5,
 .h5 {
+  margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 5em;
   color: inherit;
-}
+} */
 
 h1,
 .h1 {
@@ -10228,7 +10229,7 @@ body {
 }
 
 .ww-section {
-  padding: 100px 0;
+  padding: 200px 0;
 }
 
 .btn-primary {
