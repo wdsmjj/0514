@@ -10662,6 +10662,7 @@ a {
 .btn_open {
   /* font-weight: bold; */
   margin: 5px;
+  text-decoration: none;
   /* padding: 4px 6px; */
   /* background: #000; */
   /* color: #fff; */
