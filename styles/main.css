@@ -6690,6 +6690,22 @@ button.bg-dark:focus {
   background-color: #fbf8f1 !important;
 }
 
+.bg-skintone2 {
+  background-color: #fbf8f1 !important;
+}
+
+.bg-browntone {
+  background-color: #DAB88B !important;
+}
+
+.bg-pinktone {
+  background-color: #F3E9DD !important;
+}
+
+.bg-bluetone {
+  background-color: #B7CADB !important;
+}
+
 .bg-transparent {
   background-color: transparent !important;
 }
