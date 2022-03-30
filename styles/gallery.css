@@ -886,7 +886,7 @@ img.is-loaded {
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(8, 50vw);
+  grid-template-rows: repeat(8, 30vw);
   grid-gap: 0.3rem;
 }
 
@@ -897,7 +897,7 @@ img.is-loaded {
   display: block;
 }
 
-.gallery__item--1 {
+.gallery__item--11 {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -908,18 +908,18 @@ img.is-loaded {
   /* grid-row: 1 / span 2; */
 }
 
-.gallery__item--2 {
+.gallery__item--53 {
   grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 7;
 
   /** Alternative Syntax **/
   /* grid-column: 3 / span 2;  */
   /* grid-row: 1 / span 2; */
 }
 
-.gallery__item--3 {
+.gallery__item--32 {
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -930,9 +930,9 @@ img.is-loaded {
   grid-row: 1 / span 5; */
 }
 
-.gallery__item--4 {
-  grid-column-start: 4;
-  grid-column-end: 4;
+.gallery__item--41 {
+  grid-column-start: 1;
+  grid-column-end: 1;
   grid-row-start: 4;
   grid-row-end: 4;
 
@@ -941,22 +941,44 @@ img.is-loaded {
   /* grid-row: 3 / span 3; */
 }
 
-.gallery__item--5 {
+.gallery__item--51 {
   grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-column-end: 1;
+  grid-row-start: 5;
+  grid-row-end: 7;
 
   /** Alternative Syntax **/
   /* grid-column: 1 / span 4; */
   /* grid-row: 6 / span 3; */
 }
 
-.gallery__item--6 {
+.gallery__item--13 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--24 {
   grid-column-start: 4;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 2;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--32 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
 
   /** Alternative Syntax **/
   /* grid-column: 5 / span 4; */
