@@ -10858,3 +10858,10 @@ a {
   text-align: left;
   width: auto;
 }
+
+#thanks {
+  background: url('../images/thumbnail_02.png') no-repeat center center;
+  background-size: auto 100%;
+  color: var(--primary);
+  background-color: var(--light);
+}
