@@ -631,6 +631,18 @@ pre code {
   margin-right: auto;
 }
 
+#thanks {
+  background: url('../images/thumbnail_02.png') no-repeat center center;
+  color: var(--primary);
+  background-color: var(--light);
+  padding-top: 2em;
+  font-size: 1em;
+  background-size: cover;
+  background-position: 50%;
+  height: 40vh;
+  min-height: 480px;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -641,11 +653,17 @@ pre code {
   .container {
     max-width: 720px;
   }
+  #thanks {
+    height: 60vh;
+  }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+  #thanks {
+    height: 140vh;
   }
 }
 
@@ -10857,11 +10875,4 @@ a {
   margin: 0 -25px;
   text-align: left;
   width: auto;
-}
-
-#thanks {
-  background: url('../images/thumbnail_02.png') no-repeat center center;
-  background-size: auto 100%;
-  color: var(--primary);
-  background-color: var(--light);
 }
