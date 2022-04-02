@@ -956,12 +956,12 @@
     <script src="scripts/main.js"></script>
 
     <script>
-      let images = [];
+      let preload_img = [];
 
       function preload() {
         for (let i = 0; i < preload.arguments.lenght; i++) {
-          images[i] = new Image();
-          images[i].src = preload.arguments.src;
+          preload_img[i] = new Image();
+          preload_img[i].src = preload.arguments.src;
         }
       }
 
