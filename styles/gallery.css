@@ -886,7 +886,7 @@ img.is-loaded {
 .gallery {
   display: grid;
   grid-template-columns: repeat(21, 1fr);
-  grid-template-rows: repeat(21, 3.4vw);
+  grid-template-rows: repeat(42, 3.4vw);
   grid-gap: 0.3rem;
 }
 
@@ -951,4 +951,46 @@ img.is-loaded {
   grid-column-end: 22;
   grid-row-start: 18;
   grid-row-end: 22;
+}
+
+.gallery__item--L1 {
+  grid-column-start: 8;
+  grid-column-end: 1;
+  grid-row-start: 22;
+  grid-row-end: 28;
+}
+
+.gallery__item--L8 {
+  grid-column-start: 8;
+  grid-column-end: 22;
+  grid-row-start: 22;
+  grid-row-end: 35;
+}
+
+.gallery__item--R1 {
+  grid-column-start: 8;
+  grid-column-end: 1;
+  grid-row-start: 28;
+  grid-row-end: 39;
+}
+
+.gallery__item--Y8 {
+  grid-column-start: 8;
+  grid-column-end: 15;
+  grid-row-start: 35;
+  grid-row-end: 43;
+}
+
+.gallery__item--YE {
+  grid-column-start: 15;
+  grid-column-end: 22;
+  grid-row-start: 35;
+  grid-row-end: 43;
+}
+
+.gallery__item--Z1 {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 39;
+  grid-row-end: 43;
 }

@@ -452,6 +452,71 @@
                           loading="lazy"
                           src="images/title-crop1.jpg"
                           alt="2x2"
+                          width="2856"
+                          height="4284"
+                      /></a>
+                    </figure>
+                    <figure class="gallery__item gallery__item--L1">
+                      <a href="images/gallery5.jpg" data-size="720x1080"
+                        ><img
+                          loading="lazy"
+                          src="images/gallery5.jpg"
+                          alt="2x2"
+                          width="720"
+                          height="1080"
+                      /></a>
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--L8">
+                      <a href="images/mui1.JPG" data-size="959x1440"
+                        ><img
+                          loading="lazy"
+                          src="images/mui1.JPG"
+                          alt="2x2"
+                          width="959"
+                          height="1440"
+                      /></a>
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--R1">
+                      <a href="images/mui1.JPG" data-size="959x1440"
+                        ><img
+                          loading="lazy"
+                          src="images/mui1.JPG"
+                          alt="2x2"
+                          width="959"
+                          height="1440"
+                      /></a>
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--Y8">
+                      <a href="images/mui1.JPG" data-size="959x1440"
+                        ><img
+                          loading="lazy"
+                          src="images/mui1.JPG"
+                          alt="2x2"
+                          width="959"
+                          height="1440"
+                      /></a>
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--YE">
+                      <a href="images/mui1.JPG" data-size="959x1440"
+                        ><img
+                          loading="lazy"
+                          src="images/mui1.JPG"
+                          alt="2x2"
+                          width="959"
+                          height="1440"
+                      /></a>
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--Z1">
+                      <a href="images/mui1.JPG" data-size="959x1440"
+                        ><img
+                          loading="lazy"
+                          src="images/mui1.JPG"
+                          alt="2x2"
                           width="959"
                           height="1440"
                       /></a>
@@ -890,6 +955,18 @@
 
     <script src="scripts/main.js"></script>
 
+    <script>
+      let images = [];
+
+      function preload() {
+        for (let i = 0; i < preload.arguments.lenght; i++) {
+          images[i] = new Image();
+          images[i].src = preload.arguments.src;
+        }
+      }
+
+      preload('images/title-crop1.jpg');
+    </script>
     <script>
       const navLinks = document.querySelectorAll('.nav-item');
       const menuToggle = document.getElementById('navbarSupportedContent');
