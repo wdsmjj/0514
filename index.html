@@ -50,6 +50,12 @@
       href="https://fonts.googleapis.com/css?family=Great+Vibes"
       rel="stylesheet"
     />
+
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Dongle&display=swap"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Dongle&display=swap"
       rel="stylesheet"
@@ -58,6 +64,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="js/aos.js"></script>
 
+    <link href="styles/main.css" rel="preload" as="style" />
     <link href="styles/main.css" rel="stylesheet" />
     <link href="styles/gallery.css" rel="stylesheet" />
     <link
@@ -939,7 +946,16 @@
     </div>
 
     <footer></footer>
-
+    <script>
+      function preloading(imageArray) {
+        let n = imageArray.length;
+        for (let i = 0; i < n; i++) {
+          let img = new Image();
+          img.src = imageArray[i];
+        }
+      }
+      preloading(['images/title-crop1.jpg']);
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!--
@@ -955,18 +971,6 @@
 
     <script src="scripts/main.js"></script>
 
-    <script>
-      let preload_img = [];
-
-      function preload() {
-        for (let i = 0; i < preload.arguments.lenght; i++) {
-          preload_img[i] = new Image();
-          preload_img[i].src = preload.arguments.src;
-        }
-      }
-
-      preload('images/title-crop1.jpg');
-    </script>
     <script>
       const navLinks = document.querySelectorAll('.nav-item');
       const menuToggle = document.getElementById('navbarSupportedContent');
